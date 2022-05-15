@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <Button
+        android:id="@+id/Dur"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="66dp"
+        android:onClick="Dur"
+        android:text="DUR"
+        app:layout_constraintBottom_toTopOf="@+id/geri"
+        app:layout_constraintEnd_toEndOf="@+id/ileri"
+        app:layout_constraintStart_toStartOf="@+id/ileri"
+        app:layout_constraintTop_toBottomOf="@+id/ileri" />
+
+    <Button
+        android:id="@+id/geri"
+        android:layout_width="197dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="88dp"
+        android:onClick="geri"
+        android:text="Geri"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Dur" />
+
+    <Button
+        android:id="@+id/ileri"
+        android:layout_width="216dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="45dp"
+        android:onClick="ileri"
+        android:text="Ileri"
+        app:layout_constraintBottom_toTopOf="@+id/Dur"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
